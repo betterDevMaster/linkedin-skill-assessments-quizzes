@@ -740,7 +740,7 @@ p:first-child {
 - [ ] under the HTML view on the left
 - [ ] in the middle panel
 
-#### Q60. While HTML controls document structure, CSS controls **\_**.
+#### Q60. While HTML controls document structure, CSS controls `___`.
 
 - [ ] semantic meaning
 - [ ] content meaning
@@ -858,7 +858,7 @@ section {
 - [ ] `override`
 - [x] `!important`
 
-#### Q69. You can use the **\_** pseudo-class to set a different color on a link if it was clicked on.
+#### Q69. You can use the `___` pseudo-class to set a different color on a link if it was clicked on.
 
 - [x] `a:visited`
 - [ ] `a:hover`
@@ -879,14 +879,14 @@ section {
 - [x] `.header.clear {}`
 - [ ] `.header clear {}`
 
-#### Q72. A universal selector is specified using a(n) **\_**.
+#### Q72. A universal selector is specified using a(n) `___`.
 
 - [ ] "h1" string
 - [ ] "a" character
 - [ ] "p" character
 - [x] "\*" character
 
-#### Q73. In the following CSS code, `'h1'` is the **\_**, while `'color'` is the **\_**.
+#### Q73. In the following CSS code, `'h1'` is the `___`, while `'color'` is the `___`.
 
 ```css
 h1 {
@@ -986,9 +986,42 @@ a {color: red;}
 - [ ] `font-variant`
 - [x] `letter-spacing`
 
- #### Q82. What is the correct syntax for changing the curse from an arrow to a pointing hand when it interacts with a named element?
+#### Q82. What is the correct syntax for changing the curse from an arrow to a pointing hand when it interacts with a named element?
 
 - [x] `.element {cursor: pointer;}`
 - [ ] `.element {cursor: hand;}`
 - [ ] `.element {cursor: move-hand;}`
 - [ ] `.element {cursor: pointer-hand;}`
+
+#### Q83. What is the effect of this style?
+
+```html
+background-position: 10% 50%;
+```
+
+- [x] The background image is placed 10% from the left and 50% from the top of its container
+- [ ] The background image is placed 10% from the bottom and 50% from the left of its container
+- [ ] The background image is placed 10% from the right and 50% from the bottom of its container
+- [ ] The background image is placed 10% from the top and 50% from the left of its container
+
+#### Q84. How will the grid items display?
+
+```html
+grid-template-columns: 2fr 1fr;
+```
+
+- [ ] The first column is twice the height of the second column and will be as wide as the content
+- [ ] The first column is half the size of the container and the second column will absorb the remaining space
+- [ ] The first column is twice as wide as the second column and will fit proportionally within the grid container
+- [ ] The first column is twice the width and height of the second column, and will fit proportionally within the grid container
+
+#### Q85. Which style rule would make the image 50% smaller during a hover?
+
+```html
+<img id="photo" alt="" src="..." />
+```
+
+- [ ] img#photo:hover {scale: 0.5;}
+- [ ] img#photo:hover {transform: scale(0.5);}
+- [ ] img#photo {hover-scale: 0.5;}
+- [ ] img#photo:hover {size: smaller;}

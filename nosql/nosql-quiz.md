@@ -306,7 +306,7 @@
 - [ ] the amount of service calls
 - [ ] the number of minutes
 - [ ] the amount of service costs
-- [ ] the number of nines
+- [x] the number of nines
 
 #### Q45. You need to encrypt data at rest in DynamoDB. Which action do you take?
 
@@ -353,10 +353,49 @@
 - [ ] INSERT mystream \* sensor-d 1234 temperature 19.8 15181480106-2
 
 #### Q51. Which code example completes this statement and creates an index for a MongoDB object named restaurants, sorted ascending by the field name?
+
 ```
 var indexCollection = function(db) {return co(function*() {...});};
 ```
+
 - [ ] `const results = yield db.table('restaurants').createIndex({"name": 1}, null); return results;`
 - [ ] `const results = yield db.collection('restaurants').createIndex({"name": 0}, null); return results;`
 - [x] `const results = yield db.collection('restaurants').createIndex({"name": 1}, null); return results;`
 - [ ] `const results = yield db.table('restaurants').createIndex({"name": 0}, null); return results;`
+
+#### Q52. Which Cypher code executes the multiquery block?
+
+- [ ]
+
+```
+MATCH (c:Company {name: 'Neo4j'}) RETURN c, MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p,
+MATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type;
+```
+
+- [ ]
+
+```
+MATCH (c:Company {name: 'Neo4j'}) RETURN c, MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p,
+MATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type
+```
+
+- [ ]
+
+```
+MATCH (c:Company {name: 'Neo4j'}) RETURN c AND MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p,
+AND MATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type;
+```
+
+- [ ]
+
+```
+MATCH (c:Company {name: 'Neo4j'}) RETURN c;MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p;
+MATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type;
+```
+
+### Q53. You need to create a scalable database that supports immutable writes. What do you use?
+
+- [x] A ledger database
+- [ ] A graph database
+- [ ] A key-value database
+- [ ] A columnstore database

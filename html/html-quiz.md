@@ -163,7 +163,7 @@
 #### Q17. What should fill the blank in the HTML code bellow?
 
 ```html
-<form method="post" action="mailto:info@linkedin.com" ____="text/plain" >
+<form method="post" action="mailto:info@linkedin.com" ____="text/plain"></form>
 ```
 
 - [x] enctype
@@ -999,21 +999,15 @@ From [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr): The HT
 - [ ] `<blockquote>`
 - [ ] `<notation>`
 
-#### Q63. What is the root element of an HTML document?
 
-- [ ] `<!DOCTYPE html>`
-- [x] `<html>`
-- [ ] `<root>`
-- [ ] `<body>`
-
-#### Q64. What is the semantic meaning of the `<hr>` tag?
+#### Q63. What is the semantic meaning of the `<hr>` tag?
 
 - [ ] It draws a horizontal line.
 - [ ] This tag is deprecated and should not be used.
 - [ ] It designates a separation of sections within an `<article>`.
 - [x] It designates a topic shift within a section at the paragraph level.
 
-#### Q65. How will a video look displayed on a fully loaded webpage if the `<video>` tag is used and the **autoplay** attribute is not set?
+#### Q64. How will a video look displayed on a fully loaded webpage if the `<video>` tag is used and the **autoplay** attribute is not set?
 
 - [ ] It will display a random frame from a video, unless the **poster** attribute is set.
 - [x] It will display the first frame of the video, unless the **poster** attribute is set.
@@ -1022,10 +1016,197 @@ From [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr): The HT
 
 [Reference (w3schools)](https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_video)
 
-#### Q66. What is the correct way to describe an empty element?
+#### Q65. What is the correct way to describe an empty element?
+
 - [ ] It has opening and closing tags but no child content.
 - [ ] It display nothing on a website.
 - [x] It has no child content and no closing tag.
 - [ ] It has child content but no closing tag.
 
 [Reference (MDN Web Docs)](https://developer.mozilla.org/en-US/docs/Glossary/Empty_element)
+
+#### Q66. What is the purpose of async in this code?
+
+`<script async src="myscript.js"></script>`
+
+- [ ] It downloads the script from the server when resources allow.
+- [ ] It runs the script after HTML parsing is complete.
+- [x] It runs the script when the script is ready.
+- [ ] It pauses the parsing of HTML code while the script runs.
+
+#### Q67. What does this code?
+
+`<audio autoplay loop src="sound.mp3" type="audio/mpeg"></audio>`
+
+- [ ] When the **play** button is pressed, the browser plays the sounds over and over again until the user stops it.
+- [ ] The browser plays the sound once automatically in the background. The user has no control over the sound.
+- [ ] The browser plays the sound automatically and continuously in the background. The user may stop the sound at any tune.
+- [x] The browser plays the sound automatically and continuously in the background. The user has no control over the sound.
+
+[Reference(MDN)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)
+
+#### Q68. What is the difference between the `<head>` and `<header>` tags?
+
+- [ ] There is only one `<head>` tag per page, while there may be many `<header>` tags.
+- [ ] The `<head>` tag may contain CSS and Javascript links, while the `<header>` tag may contain headings and navigational links.
+- [x] all of these answers
+- [ ] The `<head>` tag contains meta information, while the `<header>` tag contains navigation, logos, and other page identifying content.
+
+#### Q69. In this code, what is the purpose of defer?
+
+`<script defer src="myscript.js"></script>`
+
+- [ ] It downloads the script from the server when resources allow.
+- [x] It runs the script after HTML parsing is complete.
+- [ ] It runs the script when the script is ready.
+- [ ] It pauses the parsing of HTML code while the script runs.
+
+#### Q70. The code below contains some errors. Which choice corrects all of the errors?
+
+```html
+<table>
+  <tr>
+    Cell 1
+  </tr>
+  <td>Cell 2</td>
+  <caption>
+    A table
+  </caption>
+</table>
+```
+
+- [ ]
+
+```HTML
+<caption>A table</caption>
+  <table>
+    <td>
+      <tr>Cell 1</tr>
+      <tr>Cell 2</tr>
+    </td>
+  </table>
+```
+
+- [ ]
+
+```HTML
+<caption>A table</caption>
+<table>
+  <tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+  </tr>
+</table>
+```
+
+- [X]
+
+```HTML
+<table>
+  <caption>A table</caption>
+  <tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+  </tr>
+</table>
+```
+
+- [ ]
+
+```HTML
+<table>
+  <tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+  </tr>
+  <caption>A table</caption>
+</table>
+```
+
+#### Q71. Given the file and directory structure shown here, what is the correct element to place in file profit.html to link to info.html?
+
+![Image of footer](images/ss-7.png?raw=true)
+
+- [ ] `<a href="../work/info.html">See Information </a>`
+- [x] `<a href="../info.html">See Information </a>`
+- [ ] `<a href="../../info.html">See Information </a>`
+- [ ] `<a href="info.html">See Information </a>`
+
+#### Q72. When should you use the `<article>` element?
+
+- [ ] For blog posts and other social media items
+- [ ] For the main content area of your website
+- [x] When the content stands alone as a unit, is suitable for syndication, or is reusable
+- [ ] To associate comments with a blog post
+
+[Reference (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)
+
+#### Q73. Which list comprises three empty elements?
+
+- [ ]
+
+```HTML
+<area>
+<embed>
+<strong>
+```
+
+- [ ]
+
+```HTML
+<input>
+<br>
+<p>
+```
+
+- [ ]
+
+```HTML
+<link>
+<meta>
+<title>
+```
+
+- [X]
+
+```HTML
+<wbr>
+<base>
+<source>
+```
+
+#### Q74. Which snippet of HTML, when clicked, makes a phone call on a mobile device?
+
+- [x] `<a href="tel: 802-555-1212">Call me</a>`
+- [ ] `<a href="phone">802-555-1212</a>`
+- [ ] `<a href="tel">802-555-1212</a>`
+- [ ] `<a href="phone: 802-555-1212">Call me</a>`
+
+#### Q75. What is the purpose of the `class` attribute?
+
+- [ ] Classes allow CSS to select specific elements on the page. You may list as many class names within the class attribute as you wish,
+      separated by spaces.
+- [ ] Classes allow CSS and JavaScript to select specific elements on the page. You may list only one class name per class attribute.
+- [ ] Classes allow CSS to select specific elements on the page. You may list only one class name per class attribute.
+- [x] Classes allow CSS and JavaScript to select specific elements on the page. You may list as many class names within the class attribute
+      as you wish, separated by spaces.
+
+[Reference (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class)
+
+#### Q76. Which choice is not a legal type attribute for the `<input>` tag?
+
+- [ ] `<input type="color">`
+- [ ] `<input type="tel">`
+- [ ] `<input type="week">`
+- [x] `<input type="num">`
+
+[Reference (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input)
+
+#### Q77. What is the most semantic way to mark up this sentence so that "happy talk must die" is rendered as an inline quote?
+
+As Steve Krug once said, happy talk must die.
+
+- [ ] `<p>`As Steve Krug once said, `<b>`happy talk must die.`</b>` `</p>`
+- [ ] `<p>`As Steve Krug once said, `<i>`happy talk must die.`</i>` `</p>`
+- [ ] `<p>`As Steve Krug once said, `<blockquote>`happy talk must die.`</blockquote>` `</p>`
+- [ ] `<p>`As Steve Krug once said, `<q>`happy talk must die.`</q>` `</p>`

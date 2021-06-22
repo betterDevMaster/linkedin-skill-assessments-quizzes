@@ -108,11 +108,13 @@
 #### Q16. What is the Common Type System (CTS)?
 
 - [ ] the component of CLR in which .NET Framework provides support for several languages since it contains a type system that is common with all the languages
-- [ ] the component of CLI in which .NET Framework provides support for several languages since it contains a type system that is common with all the languages
+- [x] the component of CLI in which .NET Framework provides support for several languages since it contains a type system that is common with all the languages
 - [ ] the component of CLR that allows you to map the content of a file to the logical address of an application
 - [ ] the component of CLR that enables you to run multiple versions of an application or component and CLR on the same computer at the same time
 
-#### Q7.Assuming y is a value type, which is an example of boxing?
+[reference link](https://en.wikipedia.org/wiki/Common_Type_System#:~:text=In%20Microsoft's%20.,languages%20to%20easily%20share%20information.)
+
+#### Q17.Assuming y is a value type, which is an example of boxing?
 
 - [ ] y = (int)thisObject;
 - [ ] int y = 3;
@@ -209,8 +211,8 @@
 - [ ] Invoke the GetCurrentApplicationCallbackUri method and construct an HTTPS request URI.
 - [ ] Invoke the AuthenticateAsync and GetCurrentApplicationCallbackUri methods.
 - [ ] Invoke the AuthenticateAsync method and construct an HTTPS request URI. //The requestUri parameter must be a HTTPS address and
-                                                                              //    You call the AuthenticateAsync method to 
-                                                                              //  connect to the online identity provider and get an access token
+      // You call the AuthenticateAsync method to
+      // connect to the online identity provider and get an access token
 
 #### Q31.You want to create a class of which only a single instance can exist. Which design pattern best fits this objective?
 
@@ -261,9 +263,77 @@
 - [ ] CIL is used to convert a value type to an object type.
 - [ ] CIL is a compiled code library that Microsoft developed as an open specification. Developers use it for security, versioning, and deployment purposes.
 
-#### Q38. _______ pattern works as a bridge between two incompatible interfaces? // wording in question is maybe changed?
+#### Q38. **\_\_\_** pattern works as a bridge between two incompatible interfaces? // wording in question is maybe changed?
 
 - [x] Adapter
 - [ ] Bridge
 - [ ] Singleton
 - [ ] Builder
+
+#### Q40. Why would you use ahead-of-time (AOT) compilation?
+
+- [x] You can deliver a faster startup time, especially in big applications where much code executes on startup.
+- [ ] You have a slow processor.
+- [ ] You have little memory and disk space
+- [ ] The JIT compiler does not have to do a lot of disk I/O actions, which are quite expensive.
+
+#### Q41. Which statement describes a Dispose method?
+
+- [ ] It defines an execution environment for program code and manages the CLR
+- [x] It belongs to the IDisposable interface and is used to free resources, such as network connection and files.
+- [ ] It is partially method-compiled code library for use in deployment, versioning, and security.
+- [ ] It is used for encapsulation of collections tied to functions of a class and object.
+
+#### Q42. What is a thread?
+
+- [x] A single operation that does not return a value and that usually executes asynchronously
+- [ ] the basic unit to which an operating system allocate processor time
+- [ ] a series of related tasks or methods that together turn inputs into outputs
+- [ ] a program that is running on your computer
+
+[reference link]
+https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task?view=net-5.0
+
+#### Q43. You want to add responsibilities to object dynamically. Which design pattern best fit this objective?
+
+- [x] Decorator
+- [ ] Bridge
+- [ ] Singleton
+- [ ] Facade
+
+#### Q44. Which choice creates an 8-tuple containing prime numbers that are less than 20?
+
+- [x] var primes = Tuple.Create(2, 3, 5, 7, 11, 13, 17, 19);
+- [ ] var primes = Tuple.Create(2, 3, 5, 7, 11, 13, 17, 21);
+- [ ] var primes = Tuple.Make(2, 3, 5, 7, 11, 13, 17, 20);
+- [ ] var primes = Tuple.Make(2, 3, 5, 7, 11, 13, 17, 19);
+
+#### Q45. How can you recieve form data without a model binder in a controller action?
+
+- [ ] public IFormResult ReceivedDataByRequest()
+      {
+      string theName = Request.Forms["theName"];
+      return View();
+      }
+- [ ] public IActionResult ReceivedDataByRequest()
+      {
+      string theName = Request.Forms["theName"];
+      return View();
+      }
+- [ ] public IFormResult ReceivedDataByRequest()
+      {
+      string theName = Request.Form["theName"];
+      return View();
+      }
+- [x] public IActionResult ReceivedDataByRequest()
+      {
+      string theName = Request.Form["theName"];
+      return View();
+      }
+
+#### Q46. Where should you store connection string information?
+
+- [ ] in any file within the namespace of the program
+- [ ] in the view
+- [x] in configuration files
+- [ ] in the database
